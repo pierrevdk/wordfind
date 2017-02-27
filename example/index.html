@@ -3,23 +3,43 @@
 <head>
   <title>Word Find</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//piwik.cozycloud.cc/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 10]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//piwik.cozycloud.cc/piwik.php?idsite=10" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
 </head>
 <body>
-
-<p>WordFind.js by BunKat</p>
+<div id="header">
+  <a href="https://cozy.io" title="Visit Cozy Cloud's website"><img src="cozy_io-small.svg" alt="Cozy Cloud Logo" height="65" width="65"></a>
+  <h1>Find the GAFA-NATU-BATX</h1>
+</div>
+<div id="instructions">
+  <p>Find all the companies and their acronyms. Words can be found from left to right, right to left,
+    top to bottom, bottom-up and in diagonal in every direction. Happy game!</p>
+</div>
 <div id='puzzle'></div>
 <div id='words'></div>
-<div><button id='solve'>Solve Puzzle</button></div>
+<div><button id='solve'>Please find the words for me</button></div>
 
 <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/wordfind.js"></script>
 <script type="text/javascript" src="scripts/wordfindgame.js"></script>
 <script>
 
-  var words = ['GAFA', 'NATU', 'BATX', 'Google', 'SNAP', 'CozyCloud',
-             'Samsung', 'effect', 'underline', 'view', 'annual',
-             'anniversary', 'centennial', 'millennium', 'perennial',
-             'artisan'];
+  var words = ['GAFA', 'NATU', 'BATX', 'Google', 'Apple', 'Facebook',
+             'Amazon', 'Netflix', 'Airbnb', 'Tesla', 'Uber', 'Baidu',
+             'Alibaba', 'Tencent', 'Xiaomi', 'Microsoft', 'Samsung'];
 
 
   // start a word find game
@@ -37,5 +57,10 @@
   wordfind.print(puzzle);
 
 </script>
+
+<div id="footer">
+<p>A game customized by <a href="https://cozy.io" alt="Cozy Cloud's website" title="Visit Cozy Cloud's website">Cozy Cloud</a>. <a href="https://github.com/bunkat/wordfind">Open Source wordfind</a> created by <a href="https://github.com/bunkat">bunkat</a> under the MIT Licence.
+</div>
+
 </body>
 </html>
