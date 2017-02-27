@@ -34,6 +34,7 @@ p {
   background-color: white;
   border: 0;
   font: 1em sans-serif;
+  color: #000;
 }
 
 button::-moz-focus-inner {
