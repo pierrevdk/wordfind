@@ -6,9 +6,63 @@
 *     http://github.com/bunkat/wordfind
 */
 
-p {
-  font: 22pt sans-serif;
+/**
+* Font for the page
+*/
+
+@font-face{
+	font-family: 'lato-regular';
+	src: url('lato/Lato-Regular-webfont.eot');
+	src: url('lato/Lato-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('lato/Lato-Regular-webfont.woff') format('woff'),
+	     url('lato/Lato-Regular-webfont.ttf') format('truetype'),
+	     url('lato/Lato-Regular-webfont.svg#webfont') format('svg');
+
+   font-family: 'lato-light';
+   src: url('lato/Lato-Light-webfont.eot');
+   src: url('lato/Lato-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('lato/Lato-Light-webfont.woff') format('woff'),
+        url('lato/Lato-Light-webfont.ttf') format('truetype'),
+        url('lato/Lato-Light-webfont.svg#webfont') format('svg');
+}
+
+/**
+* Global style
+*/
+
+body {
+  font-family: "lato-regular", sans-serif;
+}
+
+h1 {
+  font: 40px "lato-light", sans-serif;
   margin: 20px 20px 0px 20px;
+}
+
+img {
+  margin: 20px 20px 0px 20px;
+
+}
+
+p {
+  font-size: 22px ;
+  margin: 20px 20px 0px 20px;
+}
+
+
+
+/**
+* Styles for the header
+*/
+
+#header {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header img {
+  float: left;
 }
 
 /**
@@ -45,7 +99,7 @@ button::-moz-focus-inner {
   background-color: orange;
 }
 
-/* indicates that the square is part of a word that has been found */ 
+/* indicates that the square is part of a word that has been found */
 #puzzle .found {
   background-color: blue;
   color: white;
@@ -95,4 +149,21 @@ button::-moz-focus-inner {
 */
 #solve {
   margin: 0 30px;
+}
+
+/**
+* Styles for the footer
+*/
+#footer {
+  float: left;
+  margin: 30px 20px;
+}
+
+#footer p {
+  font: 1em sans-serif;
+}
+
+#footer div {
+  width: 100%;
+  margin: 0px auto;
 }
